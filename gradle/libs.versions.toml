@@ -1,0 +1,33 @@
+[versions]
+
+minecraft = "1.20.1"
+
+architectury-plugin = "3.4-SNAPSHOT"
+architectury-loom = "1.7-SNAPSHOT"
+
+fabric-loader = "0.16.5"
+
+lexforge = "1.20.1-47.3.10"
+
+quilt-loader = "0.26.3"
+quilted-fabric-api = "7.5.0+0.92.2-1.20.1"
+
+shadow = "8.3.1"
+
+lombok = "1.18.34"
+
+[libraries]
+architectury-plugin = { group = "architectury-plugin", name = "architectury-plugin.gradle.plugin", version.ref = "architectury-plugin" }
+architectury-loom = { group = "dev.architectury.loom", name = "dev.architectury.loom.gradle.plugin", version.ref = "architectury-loom" }
+shadow = { group = "com.gradleup.shadow", name = "shadow-gradle-plugin", version.ref = "shadow" }
+
+fabric-loader = { group = "net.fabricmc", name = "fabric-loader", version.ref = "fabric-loader" }
+
+lexforge = { group = "net.minecraftforge", name = "forge", version.ref = "lexforge" }
+
+quilt-loader = { group = "org.quiltmc", name = "quilt-loader", version.ref = "quilt-loader" }
+quilt-loader-dependencies = { group = "org.quiltmc", name = "quilt-loader-dependencies", version.ref = "quilt-loader" }
+
+quilted-fabric-api = { group = "org.quiltmc.quilted-fabric-api", name = "quilted-fabric-api", version.ref = "quilted-fabric-api" }
+
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok"}

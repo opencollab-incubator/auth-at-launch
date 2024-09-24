@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.opencollab.mc.mods.authatlaunch.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "AuthAtLaunchInjection"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

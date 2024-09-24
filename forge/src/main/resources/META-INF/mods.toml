@@ -1,0 +1,15 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "authatlaunch"
+version = "${version}"
+displayName = "Auth at Launch"
+description = '''
+Authenticates your Minecraft game when running outside of a launcher
+'''
+#logoFile = ""
+displayTest="IGNORE_ALL_VERSION"
+

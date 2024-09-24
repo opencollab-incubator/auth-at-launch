@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "authatlaunch",
+  "version": "${version}",
+  "name": "Auth at Launch",
+  "description": "Authenticates your Minecraft game when running outside of a launcher",
+  "authors": [
+    "Open Collaboration"
+  ],
+  "contact": {
+    "sources": "https://github.com/opencollab-incubator/auth-at-launch"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    "authatlaunch.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": ["library"]
+    }
+  }
+}

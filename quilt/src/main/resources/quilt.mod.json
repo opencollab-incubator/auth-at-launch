@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "authatlaunch.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "authatlaunch",
+    "version": "${version}",
+    "metadata": {
+      "name": "Auth at Launch",
+      "description": "This is an example description! Tell everyone what your mod is about!",
+      "authors": [
+        "Open Collaboration"
+      ],
+      "contact": {
+        "sources": "https://github.com/architectury/architectury-templates"
+      },
+      "icon": "assets/examplemod/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": "*"
+      }
+    ]
+  },
+  "minecraft": {
+    "environment": "client"
+  }
+}
