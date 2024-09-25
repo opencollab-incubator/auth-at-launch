@@ -5,7 +5,6 @@ import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
 import lombok.experimental.UtilityClass;
 import lombok.extern.log4j.Log4j2;
-import net.minecraft.Util;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.List;
@@ -18,7 +17,7 @@ public class AuthAtLaunchArgs {
 
         OptionParser optionParser = new OptionParser();
         optionParser.allowsUnrecognizedOptions();
-        OptionSpec<String> usernameOS = optionParser.accepts("username").withRequiredArg().defaultsTo("Player" + Util.getMillis() % 1000L);
+        OptionSpec<String> usernameOS = optionParser.accepts("username").withRequiredArg().defaultsTo("Player" + (System.nanoTime() / 1000000L) % 1000L);
         OptionSpec<String> uuidOS = optionParser.accepts("uuid").withRequiredArg();
         OptionSpec<String> xuidOS = optionParser.accepts("xuid").withOptionalArg().defaultsTo("");
         OptionSpec<String> clientIdOS = optionParser.accepts("clientId").withOptionalArg().defaultsTo("");
